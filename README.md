@@ -1,4 +1,4 @@
-# SAAS-Google-Cloud-Vision-API
+# SAAS-Google-Cloud-Vision-API-Group-7
 
 URL: [https://saas-app-007.uc.r.appspot.com)
 
