@@ -3,7 +3,7 @@
 URL: [https://saas-app-007.uc.r.appspot.com)
 
 
-## App Running
+## Running Screenshots
 
 
 ![Screen Shot Example](images/2.png)
@@ -48,36 +48,36 @@ Search for Cloud Vision
 
 ![Screen Shot Example](images/9.png)
 
-
+Enable API
 
 ![Screen Shot Example](images/10.png)
 
-Search Cloud Vision API
+Go back to the Dashboard
 
 ![Screen Shot Example](images/11.png)
 
-Enable API
+Go to IAM & Admin 
 
 ![Screen Shot Example](images/12.png)
 
-Go to IAM & Admin 
+Go to Service Account
 
 ![Screen Shot Example](images/13.png)
 
-Go to Service Account
+Create service
 
 ![Screen Shot Example](images/14.png)
 
-Create service
+Go to APIs & Services => Credentials => Create credentials
 
 ![Screen Shot Example](images/15.png)
-Go to APIs & Services => Credentials => Create credentials
+
 ![Screen Shot Example](images/16.png)
 ![Screen Shot Example](images/17.png)
 
 
 
-### Ecllipse Setup & Project Explannation
+### Java Project Impelemtation
 
 Go to App Engine in the ecllipse.
 Click on Create New Project
@@ -102,11 +102,11 @@ The Upload.java servlet gets the requests.
 
 
 
-**index.jsp** - Allows us to upload an image.
+**index.jsp** - This Allows us to upload an image.
 
 **Upload.java** - It is a servlet that gets the request. After receiving the request, the image is converted to blobbytes. BLOB allows us to manage the creation and serving of large, immutable blobs to users. After that it is processed in the method getImageLabels() in order to to fetch the image labels  by using the Google CV api. The fetched label results are then redirected to the view using labels.jsp
 
-**BlobstoreService** - 
+**Google Blobstore** - 
 
 com.google.appengine.api.blobstore
 BLOB - Binary Large OBject.BLOB is a collection of binary data that is stored as a single entity.
@@ -114,7 +114,7 @@ BLOB - Binary Large OBject.BLOB is a collection of binary data that is stored as
 [https://cloud.google.com/appengine/docs/standard/java/javadoc/com/google/appengine/api/blobstore/BlobstoreService](https://cloud.google.com/appengine/docs/standard/java/javadoc/com/google/appengine/api/blobstore/BlobstoreService)
  
 
-**Send feedback AnnotateImageRequest** - This API requests for performing Google Cloud Vision API tasks over a user-provided image, with user-requested features, and with context information.
+**Send feedback with Annotate Image Request** - This API requests for performing Google Cloud Vision API tasks over a user-provided image, with user-requested features, and with context information.
 
 [https://cloud.google.com/vision/docs/reference/rest/v1/AnnotateImageRequest](https://cloud.google.com/vision/docs/reference/rest/v1/AnnotateImageRequest)
 
@@ -125,7 +125,7 @@ After creating app deploy your project to google cloud in the cloud project crea
 ![Screen Shot Example](images/e4.png)
 
 
-### State of system :- This application runs properly and able to detect images
+
 
 
  
